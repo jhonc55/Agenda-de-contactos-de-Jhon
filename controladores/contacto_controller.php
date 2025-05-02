@@ -120,7 +120,7 @@ class ContactoController {
             if (empty($errores)) {
                 Contacto::update($id, $nombre, $apellido, $telefono, $email, $grupo_id);
                 $_SESSION['mensaje_exito'] = "Contacto actualizado correctamente.";
-                header('Location: ../public/index.php');
+                header('Location: index.php');
                 exit;
             } else {
                 $contacto = Contacto::getById($id);
@@ -133,7 +133,7 @@ class ContactoController {
     public function eliminar($id) {
         if ($id) {
             Contacto::delete($id);
-            header('Location: ../public/index.php');
+            header('Location: index.php');
             exit;
         }
     }

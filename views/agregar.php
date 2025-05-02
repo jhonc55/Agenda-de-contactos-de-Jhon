@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Agregar Contacto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public/style.css">
 </head>
 <body>
     <h1>Agregar Nuevo Contacto</h1>
